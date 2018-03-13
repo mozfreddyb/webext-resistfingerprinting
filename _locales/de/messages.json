@@ -1,0 +1,18 @@
+{
+  "extensionName": {
+    "message": "Resist Fingerprinting",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Aktiviert Resist Fingerprinting",
+    "description": "Description of the add-on."
+  },
+  "TooltipDisableRFP": {
+    "message": "Klicke um Resist Fingerprinting zu deaktivieren",
+    "description": "Tooltip for BrowserAction"
+  },
+  "TooltipReEnableRFP": {
+    "message": "Klicke um Resist Fingerprinting wieder zu aktivieren",
+    "description": "Tooltip for BrowserAction"
+  }
+}

@@ -1,7 +1,7 @@
 "use strict";
 let enabled = true;
 // Enable RFP when the extension runs
-chrome.privacy.websites.resistFingerprinting.set({ value: true});
+browser.privacy.websites.resistFingerprinting.set({ value: true});
 
 function updateIcon(prefEnabled) {
     // TODO maybe this needs a state of the enabled/disabled/error kind
@@ -25,15 +25,13 @@ function updateIcon(prefEnabled) {
                 false);
     });
 }*/
-function setRFP(state) {
-        chrome.privacy.websites.resistFingerprinting.set({ value: state }, () => {
-        if ((chrome.runtime.lastError === undefined) || (chrome.runtime.lastError === null)) {
-            enabled = state;
-        } else {
+async function setRFP(state) {
+        try {
+            await browser.privacy.websites.resistFingerprinting.set({value: state});
+        } catch(e) {
             enabled = false;
         }
         updateIcon(enabled);
-    });
 }
 
 

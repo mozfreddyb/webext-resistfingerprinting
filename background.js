@@ -28,6 +28,7 @@ function updateIcon(prefEnabled) {
 async function setRFP(state) {
         try {
             await browser.privacy.websites.resistFingerprinting.set({value: state});
+            enabled = state;
         } catch(e) {
             enabled = false;
         }

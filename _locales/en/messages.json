@@ -12,7 +12,7 @@
     "description": "Tooltip for BrowserAction"
   },
   "TooltipReEnableRFP": {
-    "message": "Click to disable Resist Fingerprinting",
+    "message": "Click to enable Resist Fingerprinting",
     "description": "Tooltip for BrowserAction"
   }
 }
